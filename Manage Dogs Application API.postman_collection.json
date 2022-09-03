@@ -1,0 +1,2101 @@
+{
+	"info": {
+		"_postman_id": "eaae6eda-aea1-40c2-b0ff-13170296d3f7",
+		"name": "Manage Dogs Application API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22934583"
+	},
+	"item": [
+		{
+			"name": "Dogs",
+			"item": [
+				{
+					"name": "Get all dogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/dogs",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"dogs"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Get all dogs",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_API_URL}}/dogs",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"dogs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2393"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"959-Es9Tlgv5+7UOQlhnx3Y3+IbPVwg\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 16:55:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"pug\",\n            \"age\": 4,\n            \"image\": null,\n            \"created_at\": \"2022-08-31T16:50:27.214Z\",\n            \"updated_at\": \"2022-08-31T16:50:38.307Z\",\n            \"user\": {\n                \"id\": 6,\n                \"fullname\": \"Hoàng Thị Ngọc Yến\",\n                \"avatar_url\": \"\",\n                \"email\": \"hoangyen180199@gmail.com\",\n                \"password\": \"$2b$10$/1lzzcra4VBmmQ.vep4wuu2jDKPtJvbQSjV6bVzCZK44ULB1R.Hya\",\n                \"role\": \"user\",\n                \"created_at\": \"2022-08-28T09:44:06.416Z\",\n                \"updated_at\": \"2022-08-28T09:44:06.416Z\"\n            }\n        },\n        {\n            \"id\": 8,\n            \"name\": \"husky\",\n            \"age\": 4,\n            \"image\": \"\",\n            \"created_at\": \"2022-08-31T16:50:27.214Z\",\n            \"updated_at\": \"2022-08-31T16:52:22.399Z\",\n            \"user\": {\n                \"id\": 7,\n                \"fullname\": \"Nguyễn Văn A\",\n                \"avatar_url\": \"\",\n                \"email\": \"anguyenvan@gmail.com\",\n                \"password\": \"$2b$10$ucP7rgh/RnDPb68mYvuj6uyXeLqmW921CUklyfIEoHS0t9IFKqpQe\",\n                \"role\": \"user\",\n                \"created_at\": \"2022-08-28T10:59:56.026Z\",\n                \"updated_at\": \"2022-08-28T10:59:56.026Z\"\n            }\n        },\n        {\n            \"id\": 10,\n            \"name\": \"đốm\",\n            \"age\": 6,\n            \"image\": null,\n            \"created_at\": \"2022-08-31T16:50:27.214Z\",\n            \"updated_at\": \"2022-08-31T16:52:26.911Z\",\n            \"user\": {\n                \"id\": 6,\n                \"fullname\": \"Hoàng Thị Ngọc Yến\",\n                \"avatar_url\": \"\",\n                \"email\": \"hoangyen180199@gmail.com\",\n                \"password\": \"$2b$10$/1lzzcra4VBmmQ.vep4wuu2jDKPtJvbQSjV6bVzCZK44ULB1R.Hya\",\n                \"role\": \"user\",\n                \"created_at\": \"2022-08-28T09:44:06.416Z\",\n                \"updated_at\": \"2022-08-28T09:44:06.416Z\"\n            }\n        },\n        {\n            \"id\": 11,\n            \"name\": \"chỉ là chó\",\n            \"age\": 3,\n            \"image\": null,\n            \"created_at\": \"2022-08-31T16:50:27.214Z\",\n            \"updated_at\": \"2022-08-31T16:53:15.000Z\",\n            \"user\": {\n                \"id\": 1,\n                \"fullname\": \"Trần Thanh Tú\",\n                \"avatar_url\": null,\n                \"email\": \"tutranthanh@gmail.com\",\n                \"password\": \"$2b$10$VG2h2nT6z0xdkIMNPNaKpujwOwsIvZpXnfk.o9nbvusA4FE9ecXau\",\n                \"role\": \"admin\",\n                \"created_at\": \"2022-08-28T07:37:39.247Z\",\n                \"updated_at\": \"2022-08-28T14:43:32.972Z\"\n            }\n        },\n        {\n            \"id\": 14,\n            \"name\": \"dog cat\",\n            \"age\": 10,\n            \"image\": null,\n            \"created_at\": \"2022-08-31T16:50:27.214Z\",\n            \"updated_at\": \"2022-08-31T16:53:29.000Z\",\n            \"user\": {\n                \"id\": 1,\n                \"fullname\": \"Trần Thanh Tú\",\n                \"avatar_url\": null,\n                \"email\": \"tutranthanh@gmail.com\",\n                \"password\": \"$2b$10$VG2h2nT6z0xdkIMNPNaKpujwOwsIvZpXnfk.o9nbvusA4FE9ecXau\",\n                \"role\": \"admin\",\n                \"created_at\": \"2022-08-28T07:37:39.247Z\",\n                \"updated_at\": \"2022-08-28T14:43:32.972Z\"\n            }\n        },\n        {\n            \"id\": 18,\n            \"name\": \"chó xù\",\n            \"age\": 15,\n            \"image\": null,\n            \"created_at\": \"2022-08-31T16:50:27.214Z\",\n            \"updated_at\": \"2022-08-31T16:52:37.917Z\",\n            \"user\": {\n                \"id\": 2,\n                \"fullname\": \"Trần Tú\",\n                \"avatar_url\": null,\n                \"email\": \"kingproup1111@gmail.com\",\n                \"password\": \"$2b$10$4E2vlkPqXb5Aun3WRe2Vm.QP6RQQg9w7lDrzFgLfMQvzgkXXtUEyK\",\n                \"role\": \"admin\",\n                \"created_at\": \"2022-08-28T07:37:39.247Z\",\n                \"updated_at\": \"2022-08-28T11:15:14.083Z\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get a dog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/dogs/1",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"dogs",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Get a dog",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_API_URL}}/dogs/1",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"dogs",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "410"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19a-xQYQjttrhxyDM9Tgll8TrF5nwJ0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 16:59:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 200,\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"pug\",\n        \"age\": 4,\n        \"image\": null,\n        \"created_at\": \"2022-08-31T16:50:27.214Z\",\n        \"updated_at\": \"2022-08-31T16:59:15.730Z\",\n        \"user\": {\n            \"id\": 2,\n            \"fullname\": \"Trần Tú\",\n            \"avatar_url\": null,\n            \"email\": \"kingproup1111@gmail.com\",\n            \"password\": \"$2b$10$4E2vlkPqXb5Aun3WRe2Vm.QP6RQQg9w7lDrzFgLfMQvzgkXXtUEyK\",\n            \"role\": \"admin\",\n            \"created_at\": \"2022-08-28T07:37:39.247Z\",\n            \"updated_at\": \"2022-08-28T11:15:14.083Z\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get a image of dog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/dogs/upload/images/FB_IMG_1604884268312a2ded815-1dca-4a72-83fa-25f2c9e89d9f.jpg",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"dogs",
+								"upload",
+								"images",
+								"FB_IMG_1604884268312a2ded815-1dca-4a72-83fa-25f2c9e89d9f.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[Admin] Post a dog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Chó Xù\",\r\n    \"age\": 15,\r\n    \"image\": \"\",\r\n    \"user\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/dogs/create",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"dogs",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Post a dog",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Chó Xù\",\r\n    \"age\": 15,\r\n    \"image\": \"\",\r\n    \"user\": {\r\n        \"id\": 2\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/dogs/create",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"dogs",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "200"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c8-X+aUkeA01OLJUg4mmuZ8oSMOZaE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 16:49:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 201,\n    \"message\": \"create successful\",\n    \"data\": {\n        \"name\": \"Chó Xù\",\n        \"age\": 15,\n        \"image\": \"\",\n        \"user\": {\n            \"id\": 2\n        },\n        \"id\": 18,\n        \"created_at\": \"2022-08-31T16:49:44.866Z\",\n        \"updated_at\": \"2022-08-31T16:49:44.866Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "[Admin] Put a dog",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"pug\",\r\n    \"age\": 4,\r\n    \"image\": \"\",\r\n    \"user\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/dogs/11/edit",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"dogs",
+								"11",
+								"edit"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Put a dog",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"pug\",\r\n    \"age\": 4,\r\n    \"image\": \"\",\r\n    \"user\": {\r\n        \"id\": 6\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/dogs/1/edit",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"dogs",
+										"1",
+										"edit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "115"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"73-thVs63Yv9Ff7rCAiXnbn3GUiHrY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 16:46:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 200,\n    \"message\": \"update dogId #1 successful\",\n    \"data\": {\n        \"name\": \"pug\",\n        \"age\": 4,\n        \"image\": \"\",\n        \"user\": {\n            \"id\": 6\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "[Admin] Patch a dog",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/dogs/14/edit",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"dogs",
+								"14",
+								"edit"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Patch a dog",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"age\": 6,\r\n    \"user\": {\r\n        \"id\": 6\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/dogs/10/edit",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"dogs",
+										"10",
+										"edit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "92"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5c-5yvzhWaMxB+jvnowX9x1Rlcztos\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 16:46:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 200,\n    \"message\": \"update dogId #10 successful\",\n    \"data\": {\n        \"age\": 6,\n        \"user\": {\n            \"id\": 6\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "[Admin] Edit image of a dog",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/3.Classroom/DETHI-XSTK-2TC-2021.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/dogs/10/edit/upload-image",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"dogs",
+								"10",
+								"edit",
+								"upload-image"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Edit image of a dog",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/E:/5.Image/Picture for T_T_Tú & H_T_N_Yến/FB_IMG_1608553464849.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/dogs/11/edit/upload-image",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"dogs",
+										"11",
+										"edit",
+										"upload-image"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "156"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9c-vTDHMzJKg772NTyFmQahYkVUMQ0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Sep 2022 03:23:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 201,\n    \"message\": \"Edit image of dogId #11 successful\",\n    \"data\": {\n        \"id\": \"11\",\n        \"image\": \"FB_IMG_16085534648493262e24c-41bf-48ab-b892-f325da035b18.jpg\"\n    }\n}"
+						},
+						{
+							"name": "[Example] Edit image of a dog",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/E:/5.Image/Picture for T_T_Tú & H_T_N_Yến/FB_IMG_1604884268312.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/dogs/10/edit/upload-image",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"dogs",
+										"10",
+										"edit",
+										"upload-image"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "156"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9c-xsKEaL9o6rsL2W3c94QdoZWQFtA\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Sep 2022 03:54:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 201,\n    \"message\": \"Edit image of dogId #10 successful\",\n    \"data\": {\n        \"id\": \"10\",\n        \"image\": \"FB_IMG_1604884268312a2ded815-1dca-4a72-83fa-25f2c9e89d9f.jpg\"\n    }\n}"
+						},
+						{
+							"name": "[Example] Edit image of a dog",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/E:/3.Classroom/DETHI-XSTK-2TC-2021.pdf"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/dogs/10/edit/upload-image",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"dogs",
+										"10",
+										"edit",
+										"upload-image"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "162"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a2-c61QrfQOJjFFg4LbVRm0Ue/KBz0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Sep 2022 03:55:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 400,\n    \"message\": \"Only image files (jpg|jpeg|png|gif) are allowed!\",\n    \"timestamp\": \"2022-09-02T03:55:06.796Z\",\n    \"path\": \"/api/v1/dogs/10/edit/upload-image\"\n}"
+						}
+					]
+				},
+				{
+					"name": "[Admin] Delete a dog",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/dogs/19/destroy",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"dogs",
+								"19",
+								"destroy"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Delete a dog",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_API_URL}}/dogs/16/destroy",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"dogs",
+										"16",
+										"destroy"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3b-29kzKLT9b0hntxME7bzTWiuc2Rg\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 16:49:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 200,\n    \"message\": \"delete dogId #16 successful\"\n}"
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "[Auth] Get a user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/users/2",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Get a user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/users/1",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "210"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d2-qiPaj0B5CKCe30/iDKoVQeXrTc0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 16:58:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 200,\n    \"data\": {\n        \"id\": 1,\n        \"fullname\": \"Trần Thanh Tú\",\n        \"avatar_url\": null,\n        \"email\": \"tutranthanh@gmail.com\",\n        \"role\": \"admin\",\n        \"created_at\": \"2022-08-28T07:37:39.247Z\",\n        \"updated_at\": \"2022-08-28T14:43:32.972Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "[Auth] Get me",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/auth/me",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"auth",
+								"me"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Get me",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_API_URL}}/auth/me",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"auth",
+										"me"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "206"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ce-rh5HDBAQ06q6eDStYHX1q2Z1cs0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 16:58:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 200,\n    \"data\": {\n        \"id\": 2,\n        \"fullname\": \"Trần Thanh Tú\",\n        \"avatar_url\": \"avatar2b9a45b9-0779-42e0-9640-754e46283929.jpg\",\n        \"email\": \"kingproup1111@gmail.com\",\n        \"role\": \"admin\",\n        \"created_at\": \"2022-08-28T07:37:39.247Z\",\n        \"updated_at\": \"2022-09-01T09:34:30.000Z\"\n    },\n    \"meta\": {\n        \"iat\": 1661966880,\n        \"exp\": 1662571680,\n        \"published_at\": \"1/9/2022, 12:28:00 a. m.\",\n        \"expires_at\": \"8/9/2022, 12:28:00 a. m.\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "[Auth] Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullname",
+									"value": "Lê Văn Huy",
+									"description": "Tên đầy đủ của người dùng",
+									"type": "text"
+								},
+								{
+									"key": "avatar_url",
+									"description": "Ảnh đại diện",
+									"type": "file",
+									"src": "/E:/5.Image/Picture for T_T_Tú & H_T_N_Yến/241184326_535836057502073_3075007439757851326_n.jpg"
+								},
+								{
+									"key": "email",
+									"value": "huylevan@gmail.com",
+									"description": "Email của người dùng",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "huylevan###",
+									"description": "Mật khẩu của người dùng",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/auth/register",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example]  Register Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "fullname",
+											"value": "Nguyễn Văn A",
+											"description": "Tên đầy đủ của người dùng",
+											"type": "text"
+										},
+										{
+											"key": "avatar_url",
+											"value": "",
+											"description": "Ảnh đại diện",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "anguyenvan@gmail.com",
+											"description": "Email của người dùng",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "anguyenvan123###",
+											"description": "Mật khẩu của người dùng",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/auth/register",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "794"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"31a-MZhCeUtnVN8L1xLqSv6VMV52RLc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Aug 2022 10:59:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 201,\n    \"message\": \"Register successful\",\n    \"data\": {\n        \"fullname\": \"Nguyễn Văn A\",\n        \"avatar_url\": \"\",\n        \"email\": \"anguyenvan@gmail.com\",\n        \"id\": 7,\n        \"role\": \"user\",\n        \"created_at\": \"2022-08-28T10:59:56.026Z\",\n        \"updated_at\": \"2022-08-28T10:59:56.026Z\"\n    },\n    \"meta\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmdWxsbmFtZSI6Ik5ndXnhu4VuIFbEg24gQSIsImF2YXRhcl91cmwiOiIiLCJlbWFpbCI6ImFuZ3V5ZW52YW5AZ21haWwuY29tIiwiaWF0IjoxNjYxNjg0Mzk2LCJleHAiOjE2NjE3NzA3OTZ9.WF44Ge5MhQk4CoUiU_dYoI7Lcje5nLeu0kTLCiI_r78\",\n        \"expires_in\": 86400000,\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmdWxsbmFtZSI6Ik5ndXnhu4VuIFbEg24gQSIsImF2YXRhcl91cmwiOiIiLCJlbWFpbCI6ImFuZ3V5ZW52YW5AZ21haWwuY29tIiwiaWF0IjoxNjYxNjg0Mzk2LCJleHAiOjE2NjIyODkxOTZ9.AqkOnCBiG03ROK0S0822wUZmhz5BOU2ZIP_Mj9h7HQg\",\n        \"refresh_expires_in\": 604800000\n    }\n}"
+						},
+						{
+							"name": "[Example has avatar] Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "fullname",
+											"value": "Lê Văn Huy",
+											"description": "Tên đầy đủ của người dùng",
+											"type": "text"
+										},
+										{
+											"key": "avatar_url",
+											"description": "Ảnh đại diện",
+											"type": "file",
+											"src": "/E:/5.Image/Picture for T_T_Tú & H_T_N_Yến/241184326_535836057502073_3075007439757851326_n.jpg"
+										},
+										{
+											"key": "email",
+											"value": "huylevan@gmail.com",
+											"description": "Email của người dùng",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "huylevan###",
+											"description": "Mật khẩu của người dùng",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/auth/register",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1095"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"447-are5M5KAwvslHdTs+c8xekBox48\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Sep 2022 03:10:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 201,\n    \"message\": \"Register successful\",\n    \"data\": {\n        \"fullname\": \"Lê Văn Huy\",\n        \"email\": \"huylevan@gmail.com\",\n        \"avatar_url\": \"241184326_535836057502073_3075007439757851326_n856cbd11-93a9-490f-9f89-406aa02713bb.jpg\",\n        \"id\": 10,\n        \"role\": \"user\",\n        \"created_at\": \"2022-09-02T03:10:01.375Z\",\n        \"updated_at\": \"2022-09-02T03:10:01.375Z\"\n    },\n    \"meta\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmdWxsbmFtZSI6IkzDqiBWxINuIEh1eSIsImVtYWlsIjoiaHV5bGV2YW5AZ21haWwuY29tIiwiYXZhdGFyX3VybCI6IjI0MTE4NDMyNl81MzU4MzYwNTc1MDIwNzNfMzA3NTAwNzQzOTc1Nzg1MTMyNl9uODU2Y2JkMTEtOTNhOS00OTBmLTlmODktNDA2YWEwMjcxM2JiLmpwZyIsImlhdCI6MTY2MjA4ODIwMSwiZXhwIjoxNjYyMTc0NjAxfQ.CnP_Yt2vFZWavykbPAXkvtJuzX-CgK311sdfnGHEekk\",\n        \"expires_in\": \"1 day\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmdWxsbmFtZSI6IkzDqiBWxINuIEh1eSIsImVtYWlsIjoiaHV5bGV2YW5AZ21haWwuY29tIiwiYXZhdGFyX3VybCI6IjI0MTE4NDMyNl81MzU4MzYwNTc1MDIwNzNfMzA3NTAwNzQzOTc1Nzg1MTMyNl9uODU2Y2JkMTEtOTNhOS00OTBmLTlmODktNDA2YWEwMjcxM2JiLmpwZyIsImlhdCI6MTY2MjA4ODIwMSwiZXhwIjoxNjYyNjkzMDAxfQ.WqcSrAoiZjFtHtvXif5i28OsJs1FaJOQPHeI65iaVlo\",\n        \"refresh_expires_in\": \"7 days\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "[Auth] Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "anguyenvan@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "anguyenvan123@",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/auth/login",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example For User] Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "anguyenvan@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "anguyenvan123###",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/auth/login",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "671"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29f-uLL+G+0RqyRNcH4YF/T3KK55If4\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 17:24:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 201,\n    \"message\": \"Login successful\",\n    \"data\": {\n        \"id\": 7,\n        \"fullname\": \"Nguyễn Văn A\",\n        \"avatar_url\": \"\",\n        \"email\": \"anguyenvan@gmail.com\",\n        \"role\": \"user\",\n        \"created_at\": \"2022-08-28T10:59:56.026Z\",\n        \"updated_at\": \"2022-08-28T10:59:56.026Z\"\n    },\n    \"meta\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuZ3V5ZW52YW5AZ21haWwuY29tIiwiaWF0IjoxNjYyMDkyNTQzLCJleHAiOjE2NjIxNzg5NDN9.BBU_qmrpYQZEZmR1zH9RLS74DsjEKLN7kHe5MOR4mOg\",\n        \"expires_in\": \"1 day\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuZ3V5ZW52YW5AZ21haWwuY29tIiwiaWF0IjoxNjYyMDkyNTQzLCJleHAiOjE2NjI2OTczNDN9.ZTcFOemRZEw6nG6YzLhuQX6i_bZmZN1j7nsE5w_-dPw\",\n        \"refresh_expires_in\": \"7 days\"\n    }\n}"
+						},
+						{
+							"name": "[Example Faild Email] Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "kingproup11111@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "tutran123###",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/auth/login",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "118"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"76-tGKXpU9m8XyGNCnJXg9GJmrcNLo\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Sep 2022 04:18:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 401,\n    \"message\": \"Email doesn't exist\",\n    \"timestamp\": \"2022-09-02T04:18:35.635Z\",\n    \"path\": \"/api/v1/auth/login\"\n}"
+						},
+						{
+							"name": "[Example Faild Password] Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "kingproup1111@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "tutran123###",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/auth/login",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "117"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"75-YdLJJNvUWlj5kfmz90MfgKq27cQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Sep 2022 04:19:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 401,\n    \"message\": \"Incorrect password\",\n    \"timestamp\": \"2022-09-02T04:19:19.414Z\",\n    \"path\": \"/api/v1/auth/login\"\n}"
+						},
+						{
+							"name": "[Example For Admin] Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "kingproup1111@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234@",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/auth/login",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "728"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d8-JELwPTnpLGOqKDp9pPplXAv99P8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Sep 2022 04:19:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 201,\n    \"message\": \"Login successful\",\n    \"data\": {\n        \"id\": 2,\n        \"fullname\": \"Trần Thanh Tú\",\n        \"avatar_url\": \"avatar2b9a45b9-0779-42e0-9640-754e46283929.jpg\",\n        \"email\": \"kingproup1111@gmail.com\",\n        \"role\": \"admin\",\n        \"created_at\": \"2022-08-28T07:37:39.247Z\",\n        \"updated_at\": \"2022-09-02T04:17:54.000Z\"\n    },\n    \"meta\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imtpbmdwcm91cDExMTFAZ21haWwuY29tIiwiaWF0IjoxNjYyMDkyMzg0LCJleHAiOjE2NjIxNzg3ODR9.yqvcs-lKrh-A6vymgzrw6whJ3Ps0kUNEb3qOggyeVj4\",\n        \"expires_in\": \"1 day\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imtpbmdwcm91cDExMTFAZ21haWwuY29tIiwiaWF0IjoxNjYyMDkyMzg0LCJleHAiOjE2NjI2OTcxODR9.Nu_Kg6rCFbvZ7a3DIT97mNYc2slU3jrt4GyVBu3WKFM\",\n        \"refresh_expires_in\": \"7 days\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "[Auth] Edit avatar of me",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar_url",
+									"description": "Ảnh đại diện",
+									"type": "file",
+									"src": "/E:/5.Image/avatar.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/auth/me/edit/upload-avatar",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"auth",
+								"me",
+								"edit",
+								"upload-avatar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Edit avatar of me",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "avatar_url",
+											"description": "Ảnh đại diện",
+											"type": "file",
+											"src": "/E:/5.Image/avatar.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/auth/me/edit/upload-avatar",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"auth",
+										"me",
+										"edit",
+										"upload-avatar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "197"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c5-+pzNXK1JgieENNhHUDIA8czxGxc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Sep 2022 09:18:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 201,\n    \"message\": \"Edit avatar of me (email kingproup1111@gmail.com) successful\",\n    \"data\": {\n        \"email\": \"kingproup1111@gmail.com\",\n        \"avatar_url\": \"avatar2b9a45b9-0779-42e0-9640-754e46283929.jpg\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "[Auth] Edit information of me",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullname\": \"Trần Thanh Tú\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/auth/me/edit",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"auth",
+								"me",
+								"edit"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Edit information of me",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullname\": \"Trần Thanh Tú\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/auth/me/edit",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"auth",
+										"me",
+										"edit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"41-x6eBqUYA1UU56QmGIB0XaAJsNa8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 01 Sep 2022 09:34:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 200,\n    \"message\": \"Update me (userId #2) successful!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "[Auth] Change Password",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "old_password",
+									"value": "anguyenvan123###",
+									"description": "Mật khẩu cũ",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "anguyenvan123@",
+									"description": "Mật khẩu mới",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "anguyenvan123@",
+									"description": "Nhập lại mật khẩu",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/auth/me/change-password",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"auth",
+								"me",
+								"change-password"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Change Password",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "old_password",
+											"value": "tutran123###",
+											"description": "Mật khẩu cũ",
+											"type": "text"
+										},
+										{
+											"key": "new_password",
+											"value": "1234@",
+											"description": "Mật khẩu mới",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "1234@",
+											"description": "Nhập lại mật khẩu",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_API_URL}}/auth/me/changePassword",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"auth",
+										"me",
+										"changePassword"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "98"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"62-U8xlC58oAV1NyydRnztRJncAQp8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Sep 2022 04:17:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 201,\n    \"message\": \"Change password for me (email: kingproup1111@gmail.com) successful\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "[Admin] Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/users",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Get all users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_API_URL}}/users",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1060"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"424-LH0y6dbL6Lh5Gqb3aSD57IXTQ5g\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 16:56:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 200,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"fullname\": \"Trần Thanh Tú\",\n            \"avatar_url\": null,\n            \"email\": \"tutranthanh@gmail.com\",\n            \"password\": \"$2b$10$VG2h2nT6z0xdkIMNPNaKpujwOwsIvZpXnfk.o9nbvusA4FE9ecXau\",\n            \"role\": \"admin\",\n            \"created_at\": \"2022-08-28T07:37:39.247Z\",\n            \"updated_at\": \"2022-08-28T14:43:32.972Z\"\n        },\n        {\n            \"id\": 2,\n            \"fullname\": \"Trần Tú\",\n            \"avatar_url\": null,\n            \"email\": \"kingproup1111@gmail.com\",\n            \"password\": \"$2b$10$4E2vlkPqXb5Aun3WRe2Vm.QP6RQQg9w7lDrzFgLfMQvzgkXXtUEyK\",\n            \"role\": \"admin\",\n            \"created_at\": \"2022-08-28T07:37:39.247Z\",\n            \"updated_at\": \"2022-08-28T11:15:14.083Z\"\n        },\n        {\n            \"id\": 6,\n            \"fullname\": \"Hoàng Thị Ngọc Yến\",\n            \"avatar_url\": \"\",\n            \"email\": \"hoangyen180199@gmail.com\",\n            \"password\": \"$2b$10$/1lzzcra4VBmmQ.vep4wuu2jDKPtJvbQSjV6bVzCZK44ULB1R.Hya\",\n            \"role\": \"user\",\n            \"created_at\": \"2022-08-28T09:44:06.416Z\",\n            \"updated_at\": \"2022-08-28T09:44:06.416Z\"\n        },\n        {\n            \"id\": 7,\n            \"fullname\": \"Nguyễn Văn A\",\n            \"avatar_url\": \"\",\n            \"email\": \"anguyenvan@gmail.com\",\n            \"password\": \"$2b$10$ucP7rgh/RnDPb68mYvuj6uyXeLqmW921CUklyfIEoHS0t9IFKqpQe\",\n            \"role\": \"user\",\n            \"created_at\": \"2022-08-28T10:59:56.026Z\",\n            \"updated_at\": \"2022-08-28T10:59:56.026Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "[Example] Get all users (role: user)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_API_URL}}/users",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "112"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"70-HFEaEICv+TMVO3BA3TEPdgejwr8\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 17:19:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 403,\n    \"message\": \"Forbidden resource\",\n    \"timestamp\": \"2022-08-31T17:19:59.552Z\",\n    \"path\": \"/api/v1/users\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get a avatar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/users/upload/avatars/241184326_535836057502073_3075007439757851326_n856cbd11-93a9-490f-9f89-406aa02713bb.jpg",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"users",
+								"upload",
+								"avatars",
+								"241184326_535836057502073_3075007439757851326_n856cbd11-93a9-490f-9f89-406aa02713bb.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[Admin] Delete a user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/users/9/destroy",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"users",
+								"9",
+								"destroy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "[Example] Delete a user",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_API_URL}}/users/8/destroy",
+									"host": [
+										"{{BASE_API_URL}}"
+									],
+									"path": [
+										"users",
+										"8",
+										"destroy"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3b-g6YUwO1gtcGYhE59ez72/RJ0CFM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 Sep 2022 03:06:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 200,\n    \"message\": \"delete userId #8 successful\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuZ3V5ZW52YW5AZ21haWwuY29tIiwiaWF0IjoxNjYyMTY4OTkyLCJleHAiOjE2NjIyNTUzOTJ9.BryDfl7LZCSn4lXrehr-Gl6fK4YeOMTrOJVLx3DApcI",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "TOKEN",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InR1dHJhbnRoYW5oQGdtYWlsLmNvbSIsImlhdCI6MTY2MTU3NTk4NiwiZXhwIjoxNjYxNjYyMzg2fQ.puRwD-LXxiqay1e5Pqi23TUU1h37B5Ijn1Lw_5J-btk",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}
